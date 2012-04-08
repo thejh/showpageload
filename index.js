@@ -7,7 +7,7 @@ var server = http.createServer(function(req, res) {
   var pathparts = urlobj.pathname.split('/')
   if (pathparts.length < 2) {
     res.writeHead(404)
-    res.end('sorry, not index site yet')
+    res.end('weird...')
   } else if (pathparts[1] === 'run') {
     var target = urlobj.query['target']
     if (typeof target !== 'string') {
@@ -26,7 +26,7 @@ var server = http.createServer(function(req, res) {
     })
   } else {
     res.writeHead(404)
-    res.end('sorry, not found: '+pathparts[1].replace(/[^a-zA-Z]g/, 'X'))
+    res.end('Use /run?target={some URL}')
   }
 })
 server.listen(8375)
