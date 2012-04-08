@@ -1,0 +1,18 @@
+{
+  "author": "Jann Horn <jannhorn@googlemail.com>",
+  "name": "showpageload",
+  "description": "Visualize when which page chunks arrive.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thejh/showpageload.git"
+  },
+  "dependencies": {
+    "request": "~2.9.200"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
